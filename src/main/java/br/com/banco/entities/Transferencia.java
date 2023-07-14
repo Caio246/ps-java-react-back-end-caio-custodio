@@ -3,6 +3,7 @@ package br.com.banco.entities;
 import lombok.*;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Getter
@@ -16,19 +17,19 @@ public class Transferencia{
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name="data_transferencia")
+    @Column(name="data_transferencia", nullable = false)
     private Date dataTransferencia;
 
-    @Column(name="valor")
-    private Integer valor;
+    @Column(name="valor", nullable = false, precision = 20, scale = 2)
+    private BigDecimal valor;
 
-    @Column(name="tipo")
+    @Column(name="tipo", nullable = false,length = 15)
     private String tipo;
 
-    @Column(name="nome_operador_transacao")
+    @Column(name="nome_operador_transacao", length = 50)
     private String nomeOperadorTransacao;
 
     @ManyToOne
-    @JoinColumn(name = "conta_id")
+    @JoinColumn(name = "conta_id", nullable = false)
     private Conta conta;
 }
