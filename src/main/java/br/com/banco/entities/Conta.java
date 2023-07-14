@@ -21,5 +21,4 @@ public class Conta {
     @Column(name="nome_responsavel")
     private String nomeResponsavel;
 
-
 }
