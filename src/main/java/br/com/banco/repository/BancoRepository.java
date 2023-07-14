@@ -1,16 +1,10 @@
-//package br.com.banco.repository;
-//
-//import lombok.Data;
-//import org.springframework.stereotype.Repository;
-//@Data
-//public class BancoRepository {
-//
-//    private String banco;
-//    private String agencia;
-//    private String conta;
-//
-//    public DadosTransferencia(String banco) {
-//
-//        this.banco = banco;
-//    }
-//}
+package br.com.banco.repository;
+
+import br.com.banco.entities.Transferencia;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import javax.persistence.Id;
+
+public interface BancoRepository extends JpaRepository <Transferencia, Id> {
+
+}
