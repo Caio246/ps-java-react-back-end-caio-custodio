@@ -1,10 +1,10 @@
 package br.com.banco.repository;
 
-import br.com.banco.entities.Transferencia;
+import br.com.banco.entities.Conta;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.Id;
-
 @Repository
-public interface BancoRepository extends JpaRepository <Transferencia, Id> {}
+public interface ContaRepository extends JpaRepository<Conta, Long> {
+
+}
