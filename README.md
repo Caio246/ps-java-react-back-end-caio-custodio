@@ -1,52 +1,30 @@
-# Processo Seletivo Java
+# Processo Seletivo Java + React
 
 ## Descrição 
 
 - Este teste consiste em construir uma camada de serviço, para uma operação muito realizada em bancos, para emissão de extrato bancário.
 
-
-## Como executar a aplicação 
-
-- Você pode executar a aplicação da maneira que quiser e utilizando a IDE de sua preferência. 
-- Caso queira executar a aplicação via linha de comando, execute primeiramente o comando:
-
-                   ./mvnw clean package  para linux.
-
-                   .\mvnw clean package  para windows.
-- Após isso execute o comando: 
-
-                             java -jar <...caminhoParaSeuJar>
-
 ## Requisitos de sistema
 
-- Possuir a JDK 11 
-- Uma IDE ou editor de sua preferência
+- Possuir a JDK 11 ou 17
+- Uma IDE ou editor de sua preferência, utilizei o IntelliJ
 
-## Requisitos do Projeto
+## Iniciando o projeto
 
-BACK END
-- A sua api deve fornecer os dados de transferência de acordo com o número da conta bacária.
-- Caso não seja informado nenhum filtro, retornar  todos os dados de transferência.
-- Caso seja informado um período de tempo, retornar todas as transferências relacionadas à aquele período de tempo.
-- Caso seja informado o nome do operador da transação, retornar todas as transferências relacionados à aquele operador.
-- Caso todos os filtros sejam informados, retornar todas as transferências com base no período de tempo informado e o nome do operador.
-- Operador de transação nada mais é que, o nome do responsável de destino da transação caso seja uma operação de transferência de saida ou o nome do responsável de onde se originou a transação caso seja uma operação de transferência de entrada.
-- Os valores devem ser de ponto flutuante, e deve-se considerar apenas duas casas decimais.
+- Abra o projeto prefencialmente no Intellij, NetBeans ou Eclipse;
+- Inicie o projeto;
+- O servidor subirá no `localhost:8080`
 
-FRONT END
-- O frontend deve seguir como exemplo o protótipo informado no documento do processo seletivo.
-- No frontend o usuário deve ser capaz de informar um período de tem e/ou nome do operador da transasção como filtros para buscar as transações.
-- As transações devem ser exibidas junto com o saldo total e o saldo total no período de acordo com o protótipo do documento.
+## Ferramentas utilizadas
+<img align="center" alt="Caio-Js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"> <img align="center" alt="Caio-Js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg">
 
-## O que iremos avaliar
-- Cumprimento dos requisitos
-- Qualidade do projeto de API e fluidez da DX
-- Organização do código e boas práticas
-- Domínio das linguagens, bibliotecas e ferramentas utilizadas
-- Organização dos commits
-- Escrita e cobertura de testes
+# Prints
 
-## Sobre a entrega
-- Utilizar o padrão RESTFul para a construção da sua API.
-- Existe um script sql no pacote resources que cotém a modelagem do banco que pode ser seguida, e valores iniciais.
-- Caso julge necessário você poderá criar mais tablas, porém a estrutura inicial não deve ser alterada.
+# Filtro vazio chamando todos
+![1](https://github.com/Caio246/ps-java-react-back-end-caio-custodio/assets/83608987/9138082b-bede-42c4-9416-c7cc5ae58ca5)
+
+# Filtro por nome
+![2](https://github.com/Caio246/ps-java-react-back-end-caio-custodio/assets/83608987/791640e1-db1d-4400-9ebd-0956d2422c74)
+
+# Consultas no localhost:8080
+![3](https://github.com/Caio246/ps-java-react-back-end-caio-custodio/assets/83608987/6c4895e7-7dc3-41ff-b71e-77751ae94315)
